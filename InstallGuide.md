@@ -18,6 +18,7 @@
     点击“Create a project”可重复创建，
     ![申请 GAE 帐号](http://i.imgur.com/u26RJzv.png)
     - 一个Gmail账户最多可以创建25个GAE应用，每个应用每天 1G 免费流量。这里我们只创建一个应用就可以了。
+
 ##二、下载 goagent 并上传至 Google App Engine
   1. 下载 goagent 并解压，<https://github.com/goagent/goagent>
   1. 编辑 local\proxy.ini，把其中 appid = goagent 中的 goagent 改成你之前申请的应用的 appid (用 windows 的记事本也可以)
