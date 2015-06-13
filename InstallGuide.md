@@ -4,19 +4,20 @@
   1. 申请注册一个 [Google App Engine](https://appengine.google.com) 账号。没有 Gmail 账号先注册一个， 用你的 Gmail 账号登录。  
     ![申请 GAE 帐号](https://raw.githubusercontent.com/goagent/goagent/wiki/InstallGuideImages/786e2887tw1e4thu7y0pgj20hs0atgn9.jpg)
   1. 登录之后，自动转向 Application 注册页面，如下图：  
-    ![申请 GAE 帐号](https://raw.githubusercontent.com/goagent/goagent/wiki/InstallGuideImages/786e2887tw1e4thu8o1tuj20hs067mxn.jpg)
-  1. 接下来的页面，输入你的手机号码，需要注意的是，手机号码前面要+86(中国区号) 格式如：+86 13888888888。  
-    ![申请 GAE 帐号](https://raw.githubusercontent.com/goagent/goagent/wiki/InstallGuideImages/786e2887tw1e4thubjc3yj20hs07dmxw.jpg)
-    - 然后等待收取手机短信，收到短信后(一串数字号码)填入下图表单，点 send 提交.(有的手机收不到信息，到<https://appengine.google.com/waitlist/sms_issues> 提交该情况，一个工作日就能收到谷歌提示Google App Engine成功开通)。  
-    ![申请 GAE 帐号](https://raw.githubusercontent.com/goagent/goagent/wiki/InstallGuideImages/786e2887tw1e4thucmsi5j20hc0743z5.jpg)
-  1. 提交完成之后，GAE 账号即被激活，然后就可以创建新的应用程序了。转入 "My Applications" 页面，点击 "Create an Application" 新建应用  
-    ![申请 GAE 帐号](https://raw.githubusercontent.com/goagent/goagent/wiki/InstallGuideImages/786e2887tw1e4thug3zu2j20hs07tzku.jpg)
-    - 一个Gmail账户最多可以创建十个GAE应用，每个应用每天 1G 免费流量。这里我们只创建一个应用就可以了。进入下一步，填写新应用的必要信息，如下图。在图中第一处添加一个应用名称，如 abc555 ,验证一下是否可用，如果显示 "Yes" 那么 abc555 就是你的 Appid(记住这个id)，而 abc555.appspot.com 就是你的应用服务器地址了。第二个空可随便填，点击 Create Application 按钮提交  
-    ![申请 GAE 帐号](https://raw.githubusercontent.com/goagent/goagent/wiki/InstallGuideImages/786e2887tw1e2s3t7k4v9j.jpg)
-    - 提交之后，就能看到下图这个页面，就说明你已经成功创建了一个新的应用,你也可以点击应用名称，进入控制面板进行管理。  
-    ![申请 GAE 帐号](https://raw.githubusercontent.com/goagent/goagent/wiki/InstallGuideImages/786e2887tw1e4thubz37cj20go049t8w.jpg)
-    - 如果你要建立多个 appid，只需要从步骤 4 开始再重复操作多次就行了。
-
+    ![申请 GAE 帐号](http://i.imgur.com/kDCyFnL.png)
+    点击“Create Application”
+    ![申请 GAE 帐号](http://i.imgur.com/M8wXgtH.png)
+    点击“Google Developers Console”
+    ![申请 GAE 帐号](http://i.imgur.com/bxuKVUC.png)
+    点击“Create a project”
+    ![申请 GAE 帐号](http://i.imgur.com/fdUGhKw.png)
+    填写"Project name"，大小写、数字随意，但注意“Project ID”（即原来的appid）全部是小写
+    新版Google App Engine可以选择US或EU data center（美国或欧洲数据中心）
+    勾选同意协议，点击“Create”开始创建Project，约1-2分钟后，看到如下图说明创建完成
+    ![申请 GAE 帐号](http://i.imgur.com/dHcWO18.png)
+    点击“Create a project”可重复创建，
+    ![申请 GAE 帐号](http://i.imgur.com/u26RJzv.png)
+    - 一个Gmail账户最多可以创建25个GAE应用，每个应用每天 1G 免费流量。这里我们只创建一个应用就可以了。
 ##二、下载 goagent 并上传至 Google App Engine
   1. 下载 goagent 并解压，<https://github.com/goagent/goagent>
   1. 编辑 local\proxy.ini，把其中 appid = goagent 中的 goagent 改成你之前申请的应用的 appid (用 windows 的记事本也可以)
